@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html>
 <body>
-<video src="./assets/rickroll.mp4" autoplay controls>
+<video src="./assets/rickroll.mp4" style="display:none;" autoplay controls>
 </video>
+<script>
+  cosnt rickroll = document.querySelector('video');
+  addEventListener('mousemove', e => {
+    video.style.display = "block";
+    video.play();
+  });
+</script>
 </body>
 </html>
