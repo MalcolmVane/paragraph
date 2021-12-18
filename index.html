@@ -1,7 +1,80 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <style media="screen">
+    * {
+      font-family: sans;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      display: flex;
+    }
+    .heading {
+      font-weight: bold;
+    }
+    nav {
+      padding: 10px;
+      background: #e2e2e2;
+    }
+    button {
+      outline: none;
+      border: none;
+      background: #4cb8f7;
+      color: white;
+      padding: 10px;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: .2s;
+      position: absolute;
+      left: 10px;
+    }
+    button:hover {
+      background: #7fc9f4;
+    }
+    p {
+      margin: 10px;
+    }
+    .sign {
+      cursor: pointer;
+    }
+  </style>
+</head>
 <body>
-  <h1 style="font-family:cursive;">lol get pranked idiot</h1>
-<iframe width="1485" height="800" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div id="stuff">
+<nav>
+  <div class="heading">Github.io File Storage   |</div><div class="sign"><span style="font-weight: bold;">|</span>   sign up</div>
+</nav>
+<p>Github.io is a file storage service that helps transfer files with ease! Sign up today and handle files with ease!</p>
+<p>>loading file (omega/radiocarbon/main/schoolwork/science_essay.txt) from user (radiocarbon) shared to (guest)</p>
+<p>>file loaded (omega/radiocarbon/main/schoolwork/science_essay.txt) from user (radiocarbon) shared to (guest) in .096 ms</p>
+<button>View File "science essay.txt"</button>
+</div>
+<div id="real" style="display:none;">
+  <h1 style="font-family:comic;">get pranked</h1>
+  <video src="./assets/rickroll.mp4" loop>
+  </video>
+  <div>Photosynthesis begins when water enters the plant through its root and carbon dioxide enters the plant through its stomata. These are the reactants of photosynthesis. The water and carbon dioxide is then moved to the chloroplasts inside the plant’s cells where photosynthesis takes place. Light is then absorbed by the chlorophyll inside of the chloroplasts and is used to convert the molecules into carbohydrates and oxygen. Six carbon dioxide molecules and six water molecules are used to produce a yield of one carbohydrate molecule and 6 oxygen molecules. The oxygen molecules are then released into the air through their stomata and the carbohydrates are processed to produce ATP.
+
+Unlike animal cells, plant cells have organelles called chloroplasts where they complete photosynthesis. Plant cells also have large vacuoles that they use to store water for photosynthesis. Plant cells also have a cell wall outside their plasma membrane in order to provide structure and protection. Lastly, there are some plant cells known as guard cells that are used to form structures called stomata. Stomata are openings in the cells that allow materials to enter and exit the plant. Stomata are primarily used to gain carbon dioxide from the atmosphere to use in photosynthesis and to release oxygen, a product of photosynthesis, into the atmosphere.
+
+Light dependent reactions and light independent reactions differ in many ways. Light dependent reactions require a form of light, and light independent reactions do not require any light. Light dependent reactions are used in the chloroplasts of plants in order to separate the oxygen from hydrogen in water atoms. The hydrogen atoms are then moved to another portion of the chloroplast and put through a series of light independent reactions that use the hydrogen to form carbohydrates.
+  </div>
+</div>
+
+<script>
+  let real = document.getElementById('real');
+  let rickroll = document.querySelector('video');
+  let stuff = document.getElementById('stuff');
+  let btn = document.querySelector('button');
+  addEventListener('click', e => {
+    console.log('go');
+    stuff.style.display = 'none';
+    real.style.display = 'block';
+    rickroll.play();
+  });
+</script>
 </body>
 </html>
